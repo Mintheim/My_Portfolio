@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title> My Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e57e6433be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profolio">My Works</a></li>
+                <li><a href="#services">Area of Intrest</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-stack Developer</p>
+            <h1> Hi, I'm <span>Min Theim</span> Kyaw<br>from Myanmar(Burma)</h1>
+        </div>
+        </div>
+    </div>
+   <!---- -------------about------------- ----> 
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I come with adaptability, strong passion, and a quick ability to learn new things. Just like a fine wine gets better over time, I'm ready to embrace the changes in this tech world and contribute my unique strengths to the field of IT.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                    <p class="tab-links"onclick="opentab('soft-skills')">Soft Skills</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>Programming Languages</span>
+                        </li>
+                        <li>JavaScript <span class="stars">★★★★★</span></li>
+                        <li>Java <span class="stars"> ★★★★☆</span></li>
+                        <li>Python <span class="stars">★★★☆☆</span></li>
+                        <li>PHP <span class="stars"></span></li>
+                        <li>
+                            <span>Front-End Development</span>
+                        </li>
+                        <li>HTML, CSS, and JavaScript <span class="stars">★★★★★</span></li>
+                        
+                        <li>
+                            <span>Database Management</span>
+                        </li>
+                        <li>MySQL <span class="stars">★★★★☆</span></li>
+                        <li>SQL <span class="stars">★★★☆☆</span></li>
+                        
+                        <li>
+                            <span>Web and Mobile Development Frameworks</span>
+                        </li>
+                        <li>React Native <span class="stars">★★★☆☆</span></li>
+                        
+                        <li>
+                            <span>Testing and Debugging</span>
+                            <span class="stars">★★★★☆</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="soft-skills">
+                    <ul>
+                        <li>
+                            <span>Communication</span>
+                            <span class="stars">★★★★★</span>
+                        </li>
+                        <li>
+                            Problem-Solving
+                            <span class="stars">★★★★☆</span>
+                        </li>
+                        <li>
+                            <span>Adaptability</span>
+                            <span class="stars">★★★★☆</span>
+                        </li>
+                        <li>
+                            Attention to Detail
+                            <span class="stars">★★★★★</span>
+                        </li>
+                        <li>
+                            <span>Teamwork</span>
+                            <span class="stars">★★★★★</span>
+                        </li>
+                        <li>
+                            Documentation
+                            <span class="stars">★★★★☆</span>
+                        </li>
+                        <li>
+                            <span>Ability to Learn Quickly</span>
+                            <span class="stars">★★★★★</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022(Current)</span><br>Pearson BTEC Level 4 Higher National Diploma in Computing</li>
+                        <li><span>2021-2022</span><br>Pearson BTEC Level 3 Foundation International Diploma in IT</li>
+                    </ul>
+                </div>
+                
+        </div>
+    </div>
+    </div>
+
+    <!-------------profolio------------->
+<div id="profolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3> Weather App </h3>      
+               <p> The Weather App is a simple yet powerful tool that allows users to instantly access real-time weather 
+                information for any location around the world</p>
+                <a href="https://mintheim.github.io/Weather_App/"><i class="fa-solid fa-link"></i></a>
+            </div>
+    </div>
+    <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+            <h3> Music Player </h3>      
+           <p> This music player is your gateway to a seamless online music journey. 
+            Join us as we explore the features that make this an innovative addition to your digital world. </p>
+            <a href="https://mintheim.github.io/Music_Player/"><i class="fa-solid fa-link"></i></a>
+</div>
+    </div>
+<div class="work">
+    <img src="images/work-3.png">
+    <div class="layer">
+        <h3> Gericht Restaurant</h3>      
+       <p> Welcome to Gericht, the epitome of fine dining. Our React-powered website is 
+        your digital gateway to a world of gastronomic delight and timeless sophistication.</p>
+        <a href="https://mintheim.github.io/Gericht_Restaurant/"><i class="fa-solid fa-link"></i></a>
+</div>
+</div>
+        </div>
+        <a href="https://github.com/Mintheim?tab=repositories" class="btn">See more</a>
+    </div>
+</div>
+
+<!--- -------------services------------ --->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Area of Intrest</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website <br> Development</h2>
+
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Applications Development</h2>
+  
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>UI/UX <br> Design</h2>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<!---------------contact-------------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Conatct Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>b.mintheim@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>+95 9444451766</p>
+
+            <div class="scoial-icons">
+                <a href="https://www.facebook.com/k.mintheim/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Mintheim"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/minthe.im/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<div class="copyright">
+    <P>Copyright © MinTheim made with Visual Studio Code.</P>
+</div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-pdMsygDoXB4xy6Wxqojt_I3RH8TA0ZcyD7qR_uYaQeGU-cscCSXmDRM9A2bms9Ml/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully!"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>

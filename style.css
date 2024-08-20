@@ -1,16 +1,31 @@
+@keyframes waveMovement {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the amplitude of the wave */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins' , sans-serif;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background: #080808;
     color: #fff;
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -19,6 +34,7 @@ body{
     background-size: cover;
     background-position: center;
 }
+
 .container{
     padding: 10px 10%;
 }
@@ -62,9 +78,13 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+
+
+
 .header-text{
     margin-top: 20%;
     font-size: 30px;
+    animation: waveMovement 3s infinite ease-in-out;
 }
 .header-text h1{
     font-size: 60px;
